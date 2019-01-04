@@ -4,8 +4,6 @@ liste_B12B=[]
 liste_B12A=fichier.read().splitlines()##conversion du contenu des fichiers en une liste
 liste_B12B.extend(liste_B12A)
 indiceB=0
-print(liste_B12A)
-print(liste_B12B)
 while len(liste_B12A) != 0:
     A=random.choice(liste_B12A)
     B=random.choice(liste_B12B)
