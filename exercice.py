@@ -25,8 +25,7 @@ while len(liste_B12A) != 0:
         save=B
         liste_B12B.remove(B)
         B=random.choice(liste_B12B)
-        B=save
-        liste_B12B.append(B)
+        liste_B12B.append(save)
     print(A+" dois offrir un cadeau à "+B) ##Affiche le résultat du tirage au sort
     liste_B12A.remove(A)##Supprime les deux noms tirés au sort de la liste
     liste_B12B.remove(B)
