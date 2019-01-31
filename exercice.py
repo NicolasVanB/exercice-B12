@@ -12,18 +12,18 @@ liste_B12B.remove(A)
 B=random.choice(liste_B12B)
 liste_B12B.append(A)
 if len(liste_B12A)==2: ##Supprime la faible probabilité que les deux derniers noms de la liste soient les mêmes
-for nom in liste_B12A:
-if nom == liste_B12B[0]:
-    A=nom
-    B=liste_B12B[1]
+    for nom in liste_B12A:
+        if nom == liste_B12B[0]:
+            A=nom
+            B=liste_B12B[1]
         if nom == liste_B12B[1]: 
             A=nom
-            B=liste_B12B[0]
-    if A in liste_B12B == False and B in liste_B12A == False:
-        save=B
-        liste_B12B.remove(B)
-        B=random.choice(liste_B12B)
-        liste_B12B.append(save)
+            B=liste_B12B[0] 
+if A in liste_B12B == False and B in liste_B12A == False:
+    save=B
+    liste_B12B.remove(B)
+    B=random.choice(liste_B12B)
+    liste_B12B.append(save)
 print(A+" doit offrir un cadeau à "+B) ##Affiche le résultat du tirage au sort
 liste_B12A.remove(A)##Supprime les deux noms tirés au sort de la liste
 liste_B12B.remove(B)
