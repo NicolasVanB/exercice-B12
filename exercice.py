@@ -1,6 +1,6 @@
 import random
 
-couples_acceptés=[]
+couples_acceptés = []
 
 def get_donneurs_receveurs():
     fichier = open("B12_liste1.txt","r")  ##Lecture des fichiers txt
@@ -111,6 +111,6 @@ def simple_cas():
         ]
     couples = trouve_tous_les_donneurs_receveurs(donneurs, receveurs)
     verifie_regles_couples(couples)
-#cas_trivial()
-simple_cas()
-cas_reel()
+while compteur < 1000
+    simple_cas()
+    cas_reel()
